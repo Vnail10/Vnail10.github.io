@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Karina Bomzon</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Mono:wght@300;400&family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <div class="nav-container">
-      <span class="nav-name">Your Name</span>
+    <div class="nav-inner">
+      <span class="nav-logo">KB.</span>
       <ul class="nav-links">
-        <li><button class="nav-btn active" data-page="about">About Me</button></li>
+        <li><button class="nav-btn active" data-page="about">About</button></li>
         <li><button class="nav-btn" data-page="projects">Projects</button></li>
         <li><button class="nav-btn" data-page="articles">Articles</button></li>
         <li><button class="nav-btn" data-page="contact">Contact</button></li>
@@ -23,159 +23,164 @@
     </div>
   </nav>
 
-  <!-- ═══════════════════ PAGE: ABOUT ME ═══════════════════ -->
+  <!-- ░░░ PAGE: ABOUT ░░░ -->
   <section id="about" class="page active">
-    <div class="about-layout">
 
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+    <div class="hero-blob blob-3"></div>
+
+    <div class="about-wrap">
       <div class="about-left">
-        <p class="greeting">Hi, I'm</p>
-        <h1 class="about-name">Your <em>Name</em></h1>
-        <p class="about-role">Computer Science Student</p>
-        <p class="about-bio">
-          I'm a second-year CS student at [Your University], passionate about building
-          things that matter. I love web development, machine learning, and writing
-          about my journey as a student in tech.
-        </p>
-        <p class="about-bio">
-          Currently looking for internship opportunities for Summer 2025.
+        <div class="tag-row">
+          <span class="tag">Cybersecurity</span>
+          <span class="tag">Student</span>
+          <span class="tag tag-open">Open to opportunities</span>
+        </div>
+        <h1 class="hero-name">Karina<br/><em>Bomzon</em></h1>
+        <p class="hero-sub">I protect systems — and I do it with style.</p>
+        <p class="hero-bio">
+          Cybersecurity student passionate about ethical hacking, network defence,
+          and making the digital world a safer place. I believe security doesn't have
+          to be intimidating — it just has to be smart.
         </p>
 
-        <div class="tech-section">
-          <p class="tech-label">Technologies I work with:</p>
-          <ul class="tech-list">
-            <li>Advanced Proficiency in Python, Node.js, React, HTML, CSS, Git, Azure DevOps</li>
-            <li>Proficient in Linux, SQL, Java, LaTeX, Docker, CompTIA Security+ Cert</li>
-          </ul>
+        <div class="tech-block">
+          <p class="tech-title">What I work with</p>
+          <div class="tech-pills">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">Linux</span>
+            <span class="tech-pill">Wireshark</span>
+            <span class="tech-pill">Kali Linux</span>
+            <span class="tech-pill">SQL</span>
+            <span class="tech-pill">Nmap</span>
+            <span class="tech-pill">Git</span>
+            <span class="tech-pill">CTF</span>
+          </div>
         </div>
 
-        <div class="about-links">
-          <a href="assets/resume.pdf" target="_blank" class="link-pill">Resume</a>
-          <a href="https://github.com/yourusername" target="_blank" class="link-pill">GitHub</a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" class="link-pill">LinkedIn</a>
+        <div class="cta-row">
+          <a href="assets/resume.pdf" target="_blank" class="btn-primary">Download CV</a>
+          <a href="https://github.com/Vnail10" target="_blank" class="btn-ghost">GitHub ↗</a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" class="btn-ghost">LinkedIn ↗</a>
         </div>
       </div>
 
       <div class="about-right">
-        <!-- Replace the div below with: <img src="assets/photo.jpg" class="profile-photo" alt="Your Name"> -->
-        <div class="photo-placeholder">
-          <span>Your Photo</span>
+        <div class="photo-frame">
+          <!-- Replace with: <img src="assets/photo.jpg" class="profile-img" alt="Karina Bomzon"> -->
+          <div class="photo-placeholder">
+            <span>Your Photo</span>
+          </div>
+          <div class="photo-deco"></div>
         </div>
-
-        <div class="about-contact-card">
-          <p class="contact-card-label">Want to reach me?</p>
-          <a href="#" class="contact-card-btn" onclick="switchPage('contact')">Send a message →</a>
+        <div class="quick-card" onclick="switchPage('contact')">
+          <span class="quick-card-text">Got an opportunity? Let's talk →</span>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- ═══════════════════ PAGE: PROJECTS ═══════════════════ -->
+  <!-- ░░░ PAGE: PROJECTS ░░░ -->
   <section id="projects" class="page">
-    <div class="page-inner">
-      <h2 class="page-title">Projects</h2>
-      <p class="page-subtitle">Things I've built</p>
+    <div class="hero-blob blob-1" style="top:-100px;right:-100px;"></div>
+    <div class="page-wrap">
+      <div class="page-header">
+        <h2 class="page-title">Projects</h2>
+        <p class="page-sub">Things I've built & broken (on purpose)</p>
+      </div>
 
       <div class="projects-grid">
 
-        <div class="project-card">
-          <div class="project-top">
-            <span class="project-year">2024</span>
-            <a href="https://github.com/yourusername/project" target="_blank" class="project-github">↗ GitHub</a>
+        <div class="proj-card">
+          <div class="proj-header">
+            <span class="proj-year">2024</span>
+            <a href="https://github.com/Vnail10" target="_blank" class="proj-link">↗ View</a>
           </div>
-          <h3 class="project-name">Project Name</h3>
-          <p class="project-desc">A short description of what this project does and what problem it solves. What did you learn?</p>
-          <div class="project-stack">
-            <span class="stack-tag">React</span>
-            <span class="stack-tag">Node.js</span>
-            <span class="stack-tag">MongoDB</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-top">
-            <span class="project-year">2024</span>
-            <a href="https://github.com/yourusername/project2" target="_blank" class="project-github">↗ GitHub</a>
-          </div>
-          <h3 class="project-name">Project Name</h3>
-          <p class="project-desc">A short description of what this project does and what problem it solves. What did you learn?</p>
-          <div class="project-stack">
-            <span class="stack-tag">Python</span>
-            <span class="stack-tag">FastAPI</span>
-            <span class="stack-tag">ML</span>
+          <div class="proj-icon">🔐</div>
+          <h3 class="proj-name">Project Name</h3>
+          <p class="proj-desc">A short description of what this project does, what vulnerability it explores or what system it secures.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Python</span>
+            <span class="proj-tag">Kali Linux</span>
+            <span class="proj-tag">Network</span>
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-top">
-            <span class="project-year">2023</span>
-            <a href="https://github.com/yourusername/project3" target="_blank" class="project-github">↗ GitHub</a>
+        <div class="proj-card">
+          <div class="proj-header">
+            <span class="proj-year">2024</span>
+            <a href="https://github.com/Vnail10" target="_blank" class="proj-link">↗ View</a>
           </div>
-          <h3 class="project-name">Project Name</h3>
-          <p class="project-desc">A short description of what this project does and what problem it solves. What did you learn?</p>
-          <div class="project-stack">
-            <span class="stack-tag">TypeScript</span>
-            <span class="stack-tag">Docker</span>
-            <span class="stack-tag">PostgreSQL</span>
+          <div class="proj-icon">🛡️</div>
+          <h3 class="proj-name">Project Name</h3>
+          <p class="proj-desc">A short description of what this project does, what vulnerability it explores or what system it secures.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Wireshark</span>
+            <span class="proj-tag">SQL</span>
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-top">
-            <span class="project-year">2023</span>
-            <a href="https://github.com/yourusername/project4" target="_blank" class="project-github">↗ GitHub</a>
+        <div class="proj-card">
+          <div class="proj-header">
+            <span class="proj-year">2023</span>
+            <a href="https://github.com/Vnail10" target="_blank" class="proj-link">↗ View</a>
           </div>
-          <h3 class="project-name">Project Name</h3>
-          <p class="project-desc">A short description of what this project does and what problem it solves. What did you learn?</p>
-          <div class="project-stack">
-            <span class="stack-tag">Java</span>
-            <span class="stack-tag">Spring Boot</span>
+          <div class="proj-icon">🔍</div>
+          <h3 class="proj-name">Project Name</h3>
+          <p class="proj-desc">A short description of what this project does, what vulnerability it explores or what system it secures.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">CTF</span>
+            <span class="proj-tag">Nmap</span>
+            <span class="proj-tag">Linux</span>
           </div>
+        </div>
+
+        <div class="proj-card proj-card-add">
+          <div class="proj-icon">＋</div>
+          <p class="proj-desc" style="text-align:center;">More projects coming soon</p>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════ PAGE: ARTICLES ═══════════════════ -->
+  <!-- ░░░ PAGE: ARTICLES ░░░ -->
   <section id="articles" class="page">
-    <div class="page-inner">
-      <h2 class="page-title">Articles</h2>
-      <p class="page-subtitle">My weekly life updates & thoughts</p>
+    <div class="hero-blob blob-2" style="bottom:-50px;left:-80px;"></div>
+    <div class="page-wrap">
+      <div class="page-header">
+        <h2 class="page-title">Articles</h2>
+        <p class="page-sub">My weekly life & thoughts — unfiltered</p>
+      </div>
 
       <div class="articles-list">
 
-        <!-- ARTICLE CARD — duplicate this block every week and fill it in -->
+        <!-- ↓ COPY THIS BLOCK EVERY WEEK ↓ -->
         <article class="article-card">
-          <div class="article-meta">
+          <div class="article-left">
+            <span class="article-week">Week 01</span>
             <span class="article-date">April 13, 2026</span>
-            <span class="article-tag">Week 1</span>
           </div>
-          <h3 class="article-title">My First Week Back at University</h3>
-          <p class="article-preview">
-            This week I started my new semester and it's already full-on. Classes, side projects,
-            late nights with coffee — here's everything that happened and what I'm thinking about...
-          </p>
-          <button class="article-read-btn" onclick="toggleArticle(this)">Read more ↓</button>
-          <div class="article-full" style="display:none;">
-            <p>
-              Write your full article here. You can add as many paragraphs as you want.
-              Just edit the text inside this div every week when you post a new one.
-            </p>
-            <p>
-              Share what you're learning, what's hard, what's exciting. People love
-              the honest day-to-day stuff.
-            </p>
+          <div class="article-right">
+            <h3 class="article-title">My First Post — Starting This Journey</h3>
+            <p class="article-preview">This is where I write about my life as a cybersecurity student. The late nights, the wins, the confusing moments — all of it...</p>
+            <button class="read-btn" onclick="toggleArticle(this)">Read more ↓</button>
+            <div class="article-full" style="display:none;">
+              <p>Write your full article here. Be real, be you. Talk about what happened this week — a class, a project, something you learned, something that frustrated you.</p>
+              <p>People love the honest stuff. Don't overthink it.</p>
+            </div>
           </div>
         </article>
+        <!-- ↑ COPY UNTIL HERE ↑ -->
 
-        <!-- ADD MORE ARTICLES BELOW — copy the block above and paste here -->
+        <!-- paste more articles above this line -->
 
       </div>
 
-      <div class="articles-subscribe">
-        <p>Want to get notified when I post? Leave your email.</p>
-        <div class="subscribe-form">
+      <div class="subscribe-box">
+        <p class="subscribe-title">Get notified when I post ✨</p>
+        <div class="subscribe-row">
           <input type="email" placeholder="your@email.com" class="subscribe-input" />
           <button class="subscribe-btn">Notify me</button>
         </div>
@@ -184,28 +189,26 @@
     </div>
   </section>
 
-  <!-- ═══════════════════ PAGE: CONTACT ═══════════════════ -->
+  <!-- ░░░ PAGE: CONTACT ░░░ -->
   <section id="contact" class="page">
-    <div class="page-inner contact-layout">
+    <div class="hero-blob blob-3" style="top:0;right:-50px;"></div>
+    <div class="page-wrap contact-wrap">
 
       <div class="contact-left">
         <h2 class="page-title">Let's talk</h2>
-        <p class="contact-intro">
-          Whether you have an opportunity, a question, or just want to say hi —
-          I'd love to hear from you.
-        </p>
-        <div class="contact-options">
-          <a href="mailto:you@email.com" class="contact-option">
-            <span class="contact-icon">✉</span>
+        <p class="contact-intro">Whether you have an opportunity, a collab idea, or just want to say hi — I'd love to hear from you.</p>
+        <div class="contact-list">
+          <a href="mailto:you@email.com" class="contact-item">
+            <span class="contact-icon-box">✉</span>
             <span>you@email.com</span>
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" class="contact-option">
-            <span class="contact-icon">in</span>
-            <span>LinkedIn</span>
+          <a href="https://github.com/Vnail10" target="_blank" class="contact-item">
+            <span class="contact-icon-box">gh</span>
+            <span>github.com/Vnail10</span>
           </a>
-          <a href="https://github.com/yourusername" target="_blank" class="contact-option">
-            <span class="contact-icon">gh</span>
-            <span>GitHub</span>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" class="contact-item">
+            <span class="contact-icon-box">in</span>
+            <span>LinkedIn</span>
           </a>
         </div>
       </div>
@@ -224,7 +227,7 @@
             <label>Message</label>
             <textarea rows="5" placeholder="What's on your mind?"></textarea>
           </div>
-          <a href="mailto:you@email.com" class="send-btn">Send message</a>
+          <a href="mailto:you@email.com" class="btn-primary">Send message</a>
         </div>
       </div>
 
