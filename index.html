@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <span class="nav-name">Your Name</span>
+      <ul class="nav-links">
+        <li><button class="nav-btn active" data-page="about">About Me</button></li>
+        <li><button class="nav-btn" data-page="projects">Projects</button></li>
+        <li><button class="nav-btn" data-page="articles">Articles</button></li>
+        <li><button class="nav-btn" data-page="contact">Contact</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ PAGE: ABOUT ME ═══════════════════ -->
+  <section id="about" class="page active">
+    <div class="about-layout">
+
+      <div class="about-left">
+        <p class="greeting">Hi, I'm</p>
+        <h1 class="about-name">Your <em>Name</em></h1>
+        <p class="about-role">Computer Science Student</p>
+        <p class="about-bio">
+          I'm a second-year CS student at [Your University], passionate about building
+          things that matter. I love web development, machine learning, and writing
+          about my journey as a student in tech.
+        </p>
+        <p class="about-bio">
+          Currently looking for internship opportunities for Summer 2025.
+        </p>
+
+        <div class="tech-section">
+          <p class="tech-label">Technologies I work with:</p>
+          <ul class="tech-list">
+            <li>Advanced Proficiency in Python, Node.js, React, HTML, CSS, Git, Azure DevOps</li>
+            <li>Proficient in Linux, SQL, Java, LaTeX, Docker, CompTIA Security+ Cert</li>
+          </ul>
+        </div>
+
+        <div class="about-links">
+          <a href="assets/resume.pdf" target="_blank" class="link-pill">Resume</a>
+          <a href="https://github.com/yourusername" target="_blank" class="link-pill">GitHub</a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" class="link-pill">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="about-right">
+        <!-- Replace the div below with: <img src="assets/photo.jpg" class="profile-photo" alt="Your Name"> -->
+        <div class="photo-placeholder">
+          <span>Your Photo</span>
+        </div>
+
+        <div class="about-contact-card">
+          <p class="contact-card-label">Want to reach me?</p>
+          <a href="#" class="contact-card-btn" onclick="switchPage('contact')">Send a message →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PAGE: PROJECTS ═══════════════════ -->
+  <section id="projects" class="page">
+    <div class="page-inner">
+      <h2 class="page-title">Projects</h2>
+      <p class="page-subtitle">Things I've built</p>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-year">2024</span>
+            <a href="https://github.com/yourusername/project" target="_blank" class="project-github">↗ GitHub</a>
+          </div>
+          <h3 class="project-name">Project Name</h3>
+          <p class="project-desc">A short description of what this project does and what problem it solves. What did you learn?</p>
+          <div class="project-stack">
+            <span class="stack-tag">React</span>
+            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag">MongoDB</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-year">2024</span>
+            <a href="https://github.com/yourusername/project2" target="_blank" class="project-github">↗ GitHub</a>
+          </div>
+          <h3 class="project-name">Project Name</h3>
+          <p class="project-desc">A short description of what this project does and what problem it solves. What did you learn?</p>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">FastAPI</span>
+            <span class="stack-tag">ML</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-year">2023</span>
+            <a href="https://github.com/yourusername/project3" target="_blank" class="project-github">↗ GitHub</a>
+          </div>
+          <h3 class="project-name">Project Name</h3>
+          <p class="project-desc">A short description of what this project does and what problem it solves. What did you learn?</p>
+          <div class="project-stack">
+            <span class="stack-tag">TypeScript</span>
+            <span class="stack-tag">Docker</span>
+            <span class="stack-tag">PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-year">2023</span>
+            <a href="https://github.com/yourusername/project4" target="_blank" class="project-github">↗ GitHub</a>
+          </div>
+          <h3 class="project-name">Project Name</h3>
+          <p class="project-desc">A short description of what this project does and what problem it solves. What did you learn?</p>
+          <div class="project-stack">
+            <span class="stack-tag">Java</span>
+            <span class="stack-tag">Spring Boot</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PAGE: ARTICLES ═══════════════════ -->
+  <section id="articles" class="page">
+    <div class="page-inner">
+      <h2 class="page-title">Articles</h2>
+      <p class="page-subtitle">My weekly life updates & thoughts</p>
+
+      <div class="articles-list">
+
+        <!-- ARTICLE CARD — duplicate this block every week and fill it in -->
+        <article class="article-card">
+          <div class="article-meta">
+            <span class="article-date">April 13, 2026</span>
+            <span class="article-tag">Week 1</span>
+          </div>
+          <h3 class="article-title">My First Week Back at University</h3>
+          <p class="article-preview">
+            This week I started my new semester and it's already full-on. Classes, side projects,
+            late nights with coffee — here's everything that happened and what I'm thinking about...
+          </p>
+          <button class="article-read-btn" onclick="toggleArticle(this)">Read more ↓</button>
+          <div class="article-full" style="display:none;">
+            <p>
+              Write your full article here. You can add as many paragraphs as you want.
+              Just edit the text inside this div every week when you post a new one.
+            </p>
+            <p>
+              Share what you're learning, what's hard, what's exciting. People love
+              the honest day-to-day stuff.
+            </p>
+          </div>
+        </article>
+
+        <!-- ADD MORE ARTICLES BELOW — copy the block above and paste here -->
+
+      </div>
+
+      <div class="articles-subscribe">
+        <p>Want to get notified when I post? Leave your email.</p>
+        <div class="subscribe-form">
+          <input type="email" placeholder="your@email.com" class="subscribe-input" />
+          <button class="subscribe-btn">Notify me</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PAGE: CONTACT ═══════════════════ -->
+  <section id="contact" class="page">
+    <div class="page-inner contact-layout">
+
+      <div class="contact-left">
+        <h2 class="page-title">Let's talk</h2>
+        <p class="contact-intro">
+          Whether you have an opportunity, a question, or just want to say hi —
+          I'd love to hear from you.
+        </p>
+        <div class="contact-options">
+          <a href="mailto:you@email.com" class="contact-option">
+            <span class="contact-icon">✉</span>
+            <span>you@email.com</span>
+          </a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" class="contact-option">
+            <span class="contact-icon">in</span>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/yourusername" target="_blank" class="contact-option">
+            <span class="contact-icon">gh</span>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <div class="contact-form">
+          <div class="field">
+            <label>Name</label>
+            <input type="text" placeholder="Jane Doe" />
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="email" placeholder="jane@example.com" />
+          </div>
+          <div class="field">
+            <label>Message</label>
+            <textarea rows="5" placeholder="What's on your mind?"></textarea>
+          </div>
+          <a href="mailto:you@email.com" class="send-btn">Send message</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
